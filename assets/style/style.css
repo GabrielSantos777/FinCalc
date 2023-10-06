@@ -1,0 +1,130 @@
+ /* Estilos responsivos */
+ @media screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #11113A;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #11113A;
+    color: white;
+    font-size: 11pt;
+    border-bottom: 1px solid white;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+  }
+  nav a:hover {
+    background-color: #555;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+  }
+  .calculator {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    width: 90%;
+    max-width: 900px;
+  }
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+  }
+  .input-group label {
+    text-align: right;
+    margin-right: 5px;
+    flex: 1;
+
+  }
+  .input-group input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 2;
+  }
+  .input-group input[type="number"].short {
+    flex: 1;
+  }
+  .input-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    
+  }
+  .button-group {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center;
+    margin-top: 10px; /* Ajuste a margem superior conforme necessário */
+  }
+  
+  .button-group button {
+    margin: 0 10px; /* Espaçamento horizontal entre os botões */
+  }
+  button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #555;
+  }
+
+  #results-container {
+    display: flex;
+    flex-direction: row; /* Alinhar os resultados horizontalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    text-align: center;
+    margin-top: 20px; /* Espaçamento superior para os resultados */
+  }
+  
+  .result-box {
+    margin-right: 20px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 600px;
+  }
+  
+  .result-label {
+    font-weight: bold;
+  }
+  
+  .result-value {
+    font-size: 1.2em;
+    margin-top: 5px;
+  }

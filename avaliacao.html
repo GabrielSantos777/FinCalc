@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style-avaliacao.css">
+    <title>Calculadora de Juros Compostos</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="float: left; margin-left: 20px;">FINCALC</h1>
+        <nav style="float: right; margin-right: 20px;">
+            <a href="index.html">Inicio</a>
+            <a href="guias.html">Guias</a>
+            <a href="avaliacao.html">Avaliação</a>
+        </nav>
+        <div style="clear: both;"></div>
+    </header>
+    <main>
+        <div class="rating-container">
+            <h1>Deixe sua avaliação</h1>
+            <div class="stars" id="stars">
+                <span class="star" data-rating="1">&#9733;</span>
+                <span class="star" data-rating="2">&#9733;</span>
+                <span class="star" data-rating="3">&#9733;</span>
+                <span class="star" data-rating="4">&#9733;</span>
+                <span class="star" data-rating="5">&#9733;</span>
+            </div>
+            <p class="selected-rating">Sua avaliação: <span id="selected-rating">0</span> estrelas</p>
+            <textarea id="comment" placeholder="Deixe um comentário" style="resize: none;"></textarea>
+            <button id="submit-button">Enviar Avaliação</button>
+        </div>
+        
+    </main>
+    <script src="assets/script/script-avaliacao.js"></script>
+</body>
+
+</html>

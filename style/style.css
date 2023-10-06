@@ -1,0 +1,110 @@
+/* Definindo margem para preencher a tela inteira */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mínimo de 100% da altura da viewport */
+
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .input-container {
+        flex-direction: column;
+    }
+}
+
+/*ESTILIZANDO A NAV*/
+
+nav {
+    background-color: blue;
+}
+
+nav span{
+    color: #ccc;
+    position: relative;
+}
+
+
+nav ul {
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    display: flex; /* Display flex para alinhar os inputs horizontalmente */
+    justify-content: center; /* Centralizando horizontalmente os inputs*/
+    align-items: center; /* Centralizando verticalmente os inputs */
+
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+
+}
+
+/*ESTILIZANDO O MAIN*/
+
+/* Estilizando a seção principal de conteúdo */
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centralizar verticalmente */
+    background-color: rgb(221, 21, 21);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+    margin: auto; /* Centralizar horizontalmente */
+    margin-top: 50px; /* Espaçamento do topo */
+    height: 400px;
+    
+}
+
+/* Estilizando o contêiner dos inputs */
+.input-container {
+    display: flex; /* Display flex para alinhar os inputs horizontalmente */
+    justify-content: center; /* Centralizando horizontalmente os inputs dentro do contêiner */
+    align-items: center; /* Centralizando verticalmente os inputs dentro do contêiner */
+    margin-bottom: 10px; /* Espaçamento na parte inferior do contêiner */
+    padding: 40px;
+
+}
+
+/* Estilizando os inputs */
+.input-container input {
+    padding: 10px; /* Espaçamento interno nos inputs */
+    margin: 5px; /* Margem entre os inputs */
+    border: 1px solid #ccc; /* Borda ao redor dos inputs */
+    border-radius: 5px; /* Cantos arredondados nos inputs */
+    width: 150px; /* Largura dos inputs */
+
+}
+
+/* Estilizando os rótulos dos inputs */
+.input-container label {
+    font-weight: bold;
+}
+
+/* Estilizando os buttons */
+
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Centralizar horizontalmente */
+    width: 100%;
+    margin-top: 20px;
+    gap: 200px; /* Espaço entre os botões */
+}
+.buttons-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

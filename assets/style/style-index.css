@@ -1,0 +1,199 @@
+ /* Estilos responsivos */
+ @media screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    .input-group {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+ 
+  .input-group input[type="number"],
+  .input-group select,.input-group input[type="text"] {
+      width: 100%;
+      margin: 5px 0;
+  }
+
+  .input-group label{
+    text-align: center;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+  }
+
+  .button-group button {
+    margin: 5px 0; /* Adiciona margem na parte superior e inferior dos botões */
+    width: 100%; /* Define a largura dos botões para 100% do contêiner */
+    max-width: 100px; /* Define uma largura máxima para os botões */
+}
+  .button-space {
+    height: 10px; /* Adiciona um espaçamento vertical entre os botões */
+}
+}
+
+/* Estilos para telas menores (exemplo: largura máxima de 768px) */
+@media screen and (max-width: 768px) {
+  main {
+      margin-top: 80px; 
+  }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #11113A;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #11113A;
+    color: white;
+    font-size: 11pt;
+    border-bottom: 1px solid white;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+  }
+  nav a:hover {
+    background-color: #0382AC;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Use min-height para evitar sobreposição em telas pequenas */
+    margin-top: 80px; 
+    
+}
+  .calculator {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    width: 90%;
+    max-width: 900px;
+    box-sizing: border-box; /* incluir o box-sizing para evitar problemas de largura */
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+  }
+  .input-group label {
+    text-align: right;
+    margin-right: 5px;
+    flex: 1;
+
+  }
+  .input-group input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 2;
+  }
+  .input-group input[type="number"].short {
+    flex: 1;
+  }
+
+  .input-group input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 2;
+  }
+  .input-group input[type="text"].short {
+    flex: 1;
+  }
+
+
+
+  .input-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    background: #2C0572;
+    color: #ffffff ;
+  }
+  .button-group {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center;
+    margin-top: 10px; /* Ajuste a margem superior conforme necessário */
+  }
+  
+  .button-group button {
+    margin: 0 10px; /* Espaçamento horizontal entre os botões */
+    width: 100%; /* Define a largura dos botões para 100% do contêiner */
+    max-width: 100px; /* Define uma largura máxima para os botões  */
+  }
+  button {
+    background-color: #0382AC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #2C0572;
+  }
+
+  #results-container {
+    display: flex;
+    flex-direction: row; /* Alinhar os resultados horizontalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    text-align: center;
+    margin-top: 20px; /* Espaçamento superior para os resultados */
+  }
+  
+  .result-box {
+    margin-right: 20px;
+    text-align: center;
+    border: 1px solid #2C0572;
+    border-radius: 10px;
+    width: 600px;
+  }
+  
+  .result-label {
+    font-weight: bold;
+  }
+  
+  .result-value {
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
+
+  #totalJuros{
+    color: #019b06;
+  }
+
+/* Estilize os campos de entrada do tipo número para remover as setas */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
